@@ -31,7 +31,9 @@ source .venv/bin/activate
 
 OOM ERROR FIX :
 
-```python -c "import torch; torch.cuda.set_per_process_memory_fraction(0.85, device=torch.device('cuda:0'))"```
+```
+python -c "import torch; torch.cuda.set_per_process_memory_fraction(0.85, device=torch.device('cuda:0'))"
+```
 
 #LOGIN METHOD#
 
