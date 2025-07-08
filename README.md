@@ -16,10 +16,10 @@ nano rgym_exp/config/rg-swarm.yaml
 ```
 sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' .venv/lib/python3.10/site-packages/hivemind/p2p/p2p_daemon.py
 ```
-create virtual environment
+#create virtual environment#
 
-goto cd rl-swarm then
 ```
+cd rl-swarm
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -37,9 +37,17 @@ python -c "import torch; torch.cuda.set_per_process_memory_fraction(0.85, device
 
 #LOGIN METHOD#
 
-```screen -S tunnel```
+```
+screen -S tunnel
+```
 
-```npm install -g localtunnel```
+```
+npm install -g localtunnel
+```
 
-```curl ifconfig.me```
-```lt --port 3000```
+```
+curl ifconfig.me
+```
+```
+lt --port 3000
+```
