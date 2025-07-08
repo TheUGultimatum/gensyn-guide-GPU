@@ -11,11 +11,16 @@ edit config file :
 nano rgym_exp/config/rg-swarm.yaml
 ```
 
-15 second timeout fix
+15 second timeout fix for pyhton 10
 
 ```
 sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' .venv/lib/python3.10/site-packages/hivemind/p2p/p2p_daemon.py
 ```
+15 second timeout fix for python 12
+```
+sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' .venv/lib/python3.12/site-packages/hivemind/p2p/p2p_daemon.py
+```
+
 #create virtual environment#
 
 ```
