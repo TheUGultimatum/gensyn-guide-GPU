@@ -6,7 +6,7 @@ echo "=========================================="
 echo ""
 
 sleep 1
-apt install curl sudo
+
 echo "🔄 Updating system packages..."
 apt update && apt install -y python3 python3-venv python3-pip curl wget screen git lsof
 
