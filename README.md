@@ -56,3 +56,17 @@ curl ifconfig.me
 ```
 lt --port 3000
 ```
+
+choose model if u have a good GPU 
+
+```
+ Gensyn/Qwen2.5-0.5B-Instruct
+
+ Qwen/Qwen3-0.6B
+
+ nvidia/AceInstruct-1.5B
+
+ dnotitia/Smoothie-Qwen3-1.7B
+
+ Gensyn/Qwen2.5-1.5B-Instruct
+```
