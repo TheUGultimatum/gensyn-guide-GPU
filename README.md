@@ -4,7 +4,11 @@ install curl via ( apt install curl ) then run script..
 ```
 curl -sSL https://raw.githubusercontent.com/TheUGultimatum/gensyn-guide-GPU/main/gensyn.sh | bash
 ```
+NOW NO NEED TO EDIT CONFIG FILE
 
+```
+sed -i -e 's/fp16: false/fp16: true/' -e 's/num_train_samples: 2/num_train_samples: 1/' ./rgym_exp/config/rg-swarm.yaml
+```
 edit config file :
 
 ```
